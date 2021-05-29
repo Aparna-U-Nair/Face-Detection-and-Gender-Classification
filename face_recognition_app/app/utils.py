@@ -41,5 +41,5 @@ def pipeline_model(path,filename,color='bgr'):
         score = results[pred]
         text = "%s : %0.2f"%(gender[pred],score)
         cv2.putText(img,text,(x,y),font,1,(255,255,0),2) #font scale is  1pixel
-    cv2.imwrite(filename,img)
+    cv2.imwrite("static/predict/"+filename,img)
 
