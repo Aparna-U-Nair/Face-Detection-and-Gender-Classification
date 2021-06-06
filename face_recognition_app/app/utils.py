@@ -3,7 +3,6 @@ import pandas as pd
 import pickle
 import cv2
 
-
 # Load all models
 haar = cv2.CascadeClassifier('./model/haarcascade_frontalface_default.xml')
 model = pickle.load(open("./model/svm.pickle","rb"))

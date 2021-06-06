@@ -36,4 +36,4 @@ def gender():
         pipeline_model(path,filename)
         return render_template("gender.html",fileupload=True,img_name=filename,w= width)
         #img_name ll be passed to html page to display the uploaded image
-    return render_template("gender.html",fileupload=False,img_name="python.png",w=250)
+    return render_template("gender.html",fileupload=False,img_name="python.jpg",w=250)
